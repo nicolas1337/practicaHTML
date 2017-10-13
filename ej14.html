@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC>
+<head chartset="UTF-8">
+<title>Ejercicio nº14</title>
+<style>
+body{
+	background-image: url(fondo.png);
+	cursor: pointer;
+}
+   h2 {
+color: #fff600;
+font-family: MS Serif;
+font-size: 27px;
+margin: 15px;
+text-align: center;
+letter-spacing: : 20px;
+font-style: italic;
+cursor: pointer;
+}
+
+ label {
+ font-family: arial;
+ margin-bottom: 5px;
+ display: block;
+ width: 300px;
+ color: #fff600;
+ font-size: 14px;
+ font-weight: bold;
+ font-style: italic;
+ cursor: pointer;
+}
+label span {
+font-size: 12px;
+color: #fff600;
+font-weight: normal;
+cursor: pointer;
+ }
+fieldset{
+	font-family: arial;
+	cursor: pointer;
+	width: 50px;	
+}
+.btn{
+	 padding: 0 15px;
+ height: 30px;
+ font: bold 12px ’Helvetica Neue’, Helvetica, Arial, sans-serif;
+ text-align: center;
+ color: #000000;
+ text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
+ cursor: pointer;
+ border: 1px solid #0d3d6a;
+ outline: none;
+ position: relative;
+ cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h2>Ejercicio nº14</h2>
+<center><fieldset>
+<legend>Formulario con CSS y HTML5</legend>
+<center>
+<form action="formu.php" method="POST">
+<label for="nombre">Ingrese su nombre:</label>
+<input type="text" name="nombre" size="20" placeholder="Ingrese su nombre"><br>
+<label for="contraseña">Ingrese una contraseña:</label>
+<input type="password" name="contraseña" placeholder="Ingrese una contraseña"><br>
+<label for="sexo">Seleccione su sexo:</label>
+<input type="radio" name="sexo" value="masculino">Masculino
+<input type="radio" name="sexo" value="femenino">Femenino<br>
+<label for="edad">Seleccione su rango de edad:</label>
+<select name="edad"><br>
+<option value="0-50">0-50</option><br>
+<option value="51-100">51-100</option><br>
+</select><br>
+<label for="mascotas[]">Seleccione que tipo de mascota tiene:</label><br>
+<select name="mascotas[]" multiple><br>
+<option value="perro">Perro</option><br>
+<option value="gato">Gato</option><br>
+<option value="pez">Pez</option><br>
+<option value="ave">Ave</option><br>
+<option value="roedor">Roedor</option><br>
+</select><br>
+<label for="hijo">Que tipo de hijos/as tiene?:</label>
+<select name="hijo">
+<optgroup label="hijos menores">
+<option value="niño">Niño</option><br>
+<option value="niña">Niña</option><br>
+</optgroup>
+<optgroup label="hijos mayores">
+<option value="hombre">Hombre</option>
+<option value="mujer">Mujer</option>
+</optgroup>
+<optgroup label="no tiene">
+<option value="no tiene">No tiene</option>
+</optgroup>
+</optgroup><br>
+</select><br>
+<label for="descripcion">Describase como es usted brevemente:</label><br>
+<textarea name="descripcion" rows="5" cols="20" placeholder="Describase como es usted brevemente"></textarea><br>
+<br>
+<input type="submit" value="enviar" class="btn"><br>
+</form>
+</center>
+</fieldset></center>
+</body>
+</html>
